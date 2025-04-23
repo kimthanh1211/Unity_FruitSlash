@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 313383e3d4143f64aa7b2962b48bcc54
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - splashEffect: {fileID: 3645754749423223864, guid: abae359d6e0aeec4597be7b82c1849ee, type: 3}
+  - sliceSound: {fileID: 8300000, guid: dbc9b6bb54abfd348933ea64797b1ea5, type: 3}
+  - audioSource: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

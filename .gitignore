@@ -1,0 +1,34 @@
+# Thư mục build và các file tạm thời của Unity
+[Tt]humbs.db
+[Dd]esktop.ini
+.idea/
+.vscode/
+.vs/
+
+# Unity3D
+[Ll]ibrary/
+[Ll]ibrary/*
+[Tt]emp/
+[Tt]emp/*
+[Aa]ssets/AssetStoreTools/
+obj/
+sys/
+build/
+builds/
+UserSettings/
+
+# Thư mục / file không cần thiết
+*.swp
+*.bak
+*.tmp
+
+# Các file của Unity
+*.pidb
+*.suo
+*.user
+*.userprefs
+*.booproj
+.idea/
+
+# Các file log của Unity
+*.log
