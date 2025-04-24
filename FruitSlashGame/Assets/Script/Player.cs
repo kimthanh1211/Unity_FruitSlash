@@ -24,10 +24,18 @@ public class Player : MonoBehaviour
     void SlashFruit()
     {
         RaycastHit2D hit = Physics2D.Raycast(cam.ScreenToWorldPoint(Input.mousePosition),Vector2.zero,Mathf.Infinity,fruitLayer);
-        if(hit.collider != null)
+        if (hit.collider != null)
         {
             hit.collider.GetComponent<Fruit>().Slash();
-            GameManager.Instance.IncreaseScore(); // Tăng điểm khi cắt trái cây
+
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.IncreaseScore();
+            }
+            else
+            {
+                Debug.LogWarning("GameManager.Instance is null!");
+            }
         }
     }
 }

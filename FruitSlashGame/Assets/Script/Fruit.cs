@@ -11,6 +11,7 @@ public class Fruit : MonoBehaviour
     public GameObject splashEffect; // Prefab hiệu ứng nước
     public AudioClip sliceSound;    // Âm thanh khi cắt
     public AudioSource audioSource; // Nơi phát âm thanh
+    private bool isSlashed = false;
     void Start()
     {
         direction = Vector2.up; // Trái cây di chuyển lên từ dưới màn hình
@@ -34,6 +35,10 @@ public class Fruit : MonoBehaviour
     // Phương thức khi trái cây bị cắt
     public void Slash()
     {
+        if (isSlashed) return;
+        isSlashed = true;
+
+        Debug.Log("Slash called!");
         // 1. Tạo hiệu ứng nước bắn tại vị trí trái cây
         if (splashEffect != null)
         {
