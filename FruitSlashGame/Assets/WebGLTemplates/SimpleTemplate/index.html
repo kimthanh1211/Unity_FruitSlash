@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>%UNITY_WEB_NAME%</title>
+    <title>FruitSlashGame</title> <!-- Tên trò chơi của bạn -->
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js"></script>
     <style>
@@ -24,17 +24,5 @@
     <div id="unity-container" class="unity-desktop">
         <canvas id="unity-canvas"></canvas>
     </div>
-
-    <script>
-    createUnityInstance(document.querySelector("#unity-canvas"), {
-      dataUrl: "%UNITY_WEBGL_LOADER_URL%",
-      frameworkUrl: "%UNITY_WEBGL_FRAMEWORK_URL%",
-      codeUrl: "%UNITY_WEBGL_CODE_URL%",
-      streamingAssetsUrl: "StreamingAssets",
-      companyName: "%COMPANY_NAME%",
-      productName: "%PRODUCT_NAME%",
-      productVersion: "%PRODUCT_VERSION%"
-    });
-    </script>
 </body>
 </html>

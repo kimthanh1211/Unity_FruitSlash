@@ -20,8 +20,9 @@ public class BuildPostProcessor : IPostprocessBuildWithReport
             // Danh sách các file cần sao chép
             string[] filesToCopy = new string[]
             {
+                "Assets/Editor/manifest.webmanifest",    // file webmanifest
                 "Assets/Editor/style.css",    // file css
-                "Assets/Editor/scripts.js"    // file js
+                "Assets/Editor/scripts.js",    // file js
             };
 
             foreach (string file in filesToCopy)
